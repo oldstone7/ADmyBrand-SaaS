@@ -64,89 +64,104 @@ A stunning, modern landing page for ADmyBRAND AI Suite, featuring cutting-edge 2
 
 ```
 .
-├── app/                     # Next.js App Router
-│   ├── globals.css              # Global styles and CSS variables
-│   ├── layout.tsx               # Root layout component
-│   └── page.tsx                 # Main landing page
+├── app/                           # Next.js App Router
+│   ├── globals.css               # Global styles and CSS variables
+│   ├── layout.tsx                # Root layout component
+│   └── page.tsx                  # Main landing page
 │
-├── components/              # Reusable component library
-│   ├── navigation/              # Navigation components
-│   │   └── navbar.tsx           # Main navigation bar
-│   ├── sections/                # Landing page sections
-│   │   ├── hero-section.tsx     # Hero/banner section
-│   │   ├── features-section.tsx # Features showcase
-│   │   ├── pricing-section.tsx  # Pricing plans
-│   │   ├── testimonials-section.tsx # Customer testimonials
-│   │   ├── blog-section.tsx     # Blog and resources
-│   │   ├── faq-section.tsx      # Frequently asked questions
-│   │   ├── about-section.tsx    # Company story and team
-│   │   ├── companies-section.tsx  # Companies using ADmyBRAND AI
-│   │   ├── contact-section.tsx  # Contact form
-│   │   └── footer.tsx           # Site footer
-│   └── ui/                      # Core UI components
-│       ├── enhanced-button.tsx  # Advanced button component
-│       ├── glass-card.tsx       # Glassmorphism card
-│       ├── modal.tsx            # Modal/dialog component
-│       ├── pricing-calculator.tsx # Interactive pricing tool
-│       ├── contact-form.tsx     # Contact form with validation
-│       ├── demo-video.tsx       # Video player component
-│       └── animated-section.tsx # Animation wrapper components
-├── hooks/                       # Custom React hooks
-│   ├── use-mobile.tsx           # Mobile detection hook
-│   ├── use-smooth-scroll.ts     # Smooth scrolling functionality
-│   ├── use-toast.ts             # Toast notification hook
-│   └── use-scroll-animation.ts  # Scroll-triggered animations
-├── lib/                         # Utility functions
-│   └── utils.ts                 # Common utility functions
-├── public/                      # Static assets
-├── styles/                      # CSS styles
-│   └── styles.css               # Global styles
-├── tailwind.config.ts           # Tailwind CSS configuration
-├── tsconfig.json                # TypeScript configuration
-└── package.json                 # Project dependencies
-\`\`\`
+├── components/                    # Reusable component library
+│   ├── navigation/               # Navigation components
+│   │   └── navbar.tsx            # Main navigation bar
+│   │
+│   ├── sections/                 # Landing page sections
+│   │   ├── hero-section.tsx      # Hero/banner section
+│   │   ├── features-section.tsx  # Features showcase
+│   │   ├── pricing-section.tsx   # Pricing plans
+│   │   ├── testimonials-section.tsx
+│   │   ├── blog-section.tsx      # Blog and resources
+│   │   ├── faq-section.tsx       # Frequently asked questions
+│   │   ├── about-section.tsx     # Company story and team
+│   │   ├── companies-section.tsx # Companies using ADmyBRAND AI
+│   │   ├── contact-section.tsx   # Contact form
+│   │   └── footer.tsx            # Site footer
+│   │
+│   └── ui/                       # Core UI components
+│       ├── enhanced-button.tsx   # Advanced button component
+│       ├── glass-card.tsx        # Glassmorphism card
+│       ├── modal.tsx             # Modal/dialog component
+│       ├── pricing-calculator.tsx
+│       ├── contact-form.tsx      # Contact form with validation
+│       ├── demo-video.tsx        # Video player component
+│       └── animated-section.tsx  # Animation wrapper components
+│
+├── hooks/                        # Custom React hooks
+│   ├── use-mobile.tsx            # Mobile detection hook
+│   ├── use-smooth-scroll.ts      # Smooth scrolling functionality
+│   ├── use-toast.ts              # Toast notification hook
+│   └── use-scroll-animation.ts   # Scroll-triggered animations
+│
+├── lib/                          # Utility functions
+│   └── utils.ts                  # Common utility functions
+│
+├── public/                       # Static assets
+│
+├── styles/                       # CSS styles
+│   └── styles.css                # Global styles
+│
+├── tailwind.config.ts            # Tailwind CSS configuration
+├── tsconfig.json                 # TypeScript configuration
+└── package.json                  # Project dependencies
+```
 
 ## 🎯 Key Components
 
 ### **Navigation**
+
 - **Navbar** - Responsive navigation with glassmorphism effects
 - **Mobile Menu** - Animated slide-out menu for mobile devices
 - **Smooth Scrolling** - Seamless navigation between sections
 
 ### **Hero Section**
+
 - **Animated Headlines** - Gradient text with staggered animations
 - **Interactive Dashboard** - Mockup with animated charts and metrics
 - **CTA Buttons** - Premium styled call-to-action buttons
 - **Demo Video Modal** - Interactive video player
 
 ### **Companies Section**
+
 - **Companies** - Companies using ADmyBRAND AI
 
 ### **Features Section**
+
 - **Grid Layout** - Responsive feature cards
 - **Icon Animations** - Rotating and scaling effects on hover
 - **Scroll Animations** - Elements animate in on scroll
 - **Equal Height Cards** - Consistent card heights across devices
 
 ### **Pricing Section**
+
 - **Interactive Calculator** - Real-time pricing calculations
 - **Plan Comparison** - Clear feature comparisons
 - **Billing Toggle** - Monthly/yearly pricing switch
 - **Popular Plan Highlight** - Visual emphasis on recommended plan
 
-### **About Section** 
+### **About Section**
+
 - **Company Story** - Engaging narrative with statistics
 - **Core Values** - Mission-driven content with animated icons
 - **Leadership Team** - Professional team member profiles
 - **Trust Indicators** - Customer count, uptime, and global reach stats
 
 ### **Blog & Resources**
+
 - **Featured Articles** - Highlighted blog posts
 - **Resource Downloads** - Free guides, templates, and tools
 - **Newsletter Signup** - Email subscription form
 - **Category Filtering** - Organized content sections
 
 ### **Contact Section**
+
 - **Form Validation** - Real-time form validation
 - **Multiple Contact Methods** - Various ways to get in touch
 - **Success States** - Confirmation messages and feedback
@@ -155,42 +170,48 @@ A stunning, modern landing page for ADmyBRAND AI Suite, featuring cutting-edge 2
 ## 🎨 Design System
 
 ### **8px Grid System** ✅
+
 All spacing follows the 8px grid system for perfect visual consistency:
-\`\`\`css
+
+```css
 /* Base spacing units (all multiples of 8px) */
 2px, 4px, 8px, 12px, 16px, 24px, 32px, 40px, 48px, 64px, 96px, 128px...
 
 /* Applied throughout */
 padding: 24px (3 * 8px)
-margin: 32px (4 * 8px)  
+margin: 32px (4 * 8px)
 gap: 16px (2 * 8px)
-\`\`\`
+```
 
 ### **Color Psychology** ✅
+
 Trust and professionalism focused color palette:
-\`\`\`css
+
+```css
 /* Primary Trust Colors */
---trust-blue: #0ea5e9      /* Reliability & Trust */
---professional-navy: #0c4a6e  /* Authority & Premium */
---innovation-purple: #8b5cf6   /* Innovation & Creativity */
---success-green: #10b981       /* Security & Success */
+--trust-blue: #0ea5e9;      /* Reliability & Trust */
+--professional-navy: #0c4a6e;  /* Authority & Premium */
+--innovation-purple: #8b5cf6;   /* Innovation & Creativity */
+--success-green: #10b981;       /* Security & Success */
 
 /* Glassmorphism */
---glass-bg: rgba(255, 255, 255, 0.1)
---glass-border: rgba(255, 255, 255, 0.2)
---glass-backdrop: blur(12px)
+--glass-bg: rgba(255, 255, 255, 0.1);
+--glass-border: rgba(255, 255, 255, 0.2);
+--glass-backdrop: blur(12px);
 
 /* Professional Gradients */
---gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%)
---gradient-trust: linear-gradient(135deg, #0ea5e9 0%, #8b5cf6 100%)
-\`\`\`
+--gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+--gradient-trust: linear-gradient(135deg, #0ea5e9 0%, #8b5cf6 100%);
+```
 
 ### **Typography Hierarchy** ✅
+
 Clear distinction between all text levels:
-\`\`\`css
+
+```css
 /* Headers - Bold & Extrabold (700-800) */
 Hero: 72px/80px, font-weight: 800, letter-spacing: -0.025em
-H1: 60px/72px, font-weight: 700, letter-spacing: -0.025em  
+H1: 60px/72px, font-weight: 700, letter-spacing: -0.025em
 H2: 48px/56px, font-weight: 700, letter-spacing: -0.025em
 H3: 36px/48px, font-weight: 700, letter-spacing: -0.025em
 H4: 24px/32px, font-weight: 600, letter-spacing: -0.025em
@@ -203,7 +224,7 @@ Emphasis: 16px/24px, font-weight: 500
 /* Captions - Medium (500) */
 Small: 14px/20px, font-weight: 500, letter-spacing: 0.025em
 XSmall: 12px/16px, font-weight: 500, letter-spacing: 0.025em
-\`\`\`
+```
 
 ### **Spacing System**
 - **Sections**: py-24 (96px vertical padding)
@@ -219,54 +240,59 @@ XSmall: 12px/16px, font-weight: 500, letter-spacing: 0.025em
 ## 🚀 Getting Started
 
 ### **Prerequisites**
+
 - Node.js 18.0 or later
 - npm, yarn, or pnpm package manager
 
 ### **Installation**
 
 1. **Clone the repository**
-\`\`\`bash
-git clone https://github.com/oldstone7/admybrand-landing.git
-cd admybrand-landing
-\`\`\`
+
+   ```bash
+   git clone https://github.com/oldstone7/admybrand-landing.git
+   cd admybrand-landing
+   ```
 
 2. **Install dependencies**
-\`\`\`bash
-npm install
-# or
-yarn install
-# or
-pnpm install
-\`\`\`
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
 
 3. **Run the development server**
-\`\`\`bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-\`\`\`
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   ```
 
 4. **Open your browser**
-Navigate to [http://localhost:3000](http://localhost:3000)
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
 ### **Build for Production**
-\`\`\`bash
+
+```bash
 npm run build
 npm run start
-\`\`\`
+```
 
 ## 📱 Responsive Breakpoints
 
-\`\`\`css
+```css
 /* Mobile First Approach */
-sm: 640px   /* Small devices (landscape phones) */
-md: 768px   /* Medium devices (tablets) */
-lg: 1024px  /* Large devices (laptops) */
-xl: 1280px  /* Extra large devices (desktops) */
-2xl: 1536px /* 2X large devices (large desktops) */
-\`\`\`
+sm: 640px;   /* Small devices (landscape phones) */
+md: 768px;   /* Medium devices (tablets) */
+lg: 1024px;  /* Large devices (laptops) */
+xl: 1280px;  /* Extra large devices (desktops) */
+2xl: 1536px; /* 2X large devices (large desktops) */
+```
 
 ## ♿ Accessibility Features
 
@@ -288,8 +314,10 @@ Modify `tailwind.config.ts` to customize:
 - Breakpoints
 
 ### **Component Variants**
+
 Use Class Variance Authority (CVA) for component variants:
-\`\`\`typescript
+
+```typescript
 const buttonVariants = cva(
   "base-styles",
   {
@@ -301,7 +329,7 @@ const buttonVariants = cva(
     }
   }
 )
-\`\`\`
+```
 
 ## 📊 Performance Optimizations
 
@@ -314,7 +342,7 @@ const buttonVariants = cva(
 
 ## 🧪 Testing
 
-\`\`\`bash
+```bash
 # Run unit tests
 npm run test
 
@@ -323,25 +351,28 @@ npm run test:e2e
 
 # Run accessibility tests
 npm run test:a11y
-\`\`\`
+```
 
 
 ## 🚀 Deployment
 
 ### **Vercel (Recommended)**
-\`\`\`bash
+
+```bash
 npm install -g vercel
 vercel
-\`\`\`
+```
 
 ### **Netlify**
-\`\`\`bash
+
+```bash
 npm run build
 # Deploy dist folder to Netlify
-\`\`\`
+```
 
 ### **Docker**
-\`\`\`dockerfile
+
+```dockerfile
 FROM node:18-alpine
 WORKDIR /app
 COPY package*.json ./
@@ -350,7 +381,7 @@ COPY . .
 RUN npm run build
 EXPOSE 3000
 CMD ["npm", "start"]
-\`\`\`
+```
 
 
 ## Inspirations
