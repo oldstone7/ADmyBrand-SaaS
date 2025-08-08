@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { AnimatedSection } from "@/components/ui/animated-section"
+import { useEffect, useState } from "react"
 
 const companies = [
   {
@@ -135,6 +136,30 @@ const stats = [
 export function CompaniesSection() {
   // Create seamless loop by tripling the array
   const seamlessCompanies = [...companies, ...companies, ...companies]
+  const [isClient, setIsClient] = useState(false)
+  const [containerWidth, setContainerWidth] = useState(0)
+
+  useEffect(() => {
+    setIsClient(true)
+    // Set initial width
+    const updateWidth = () => {
+      if (typeof window !== 'undefined') {
+        setContainerWidth(window.innerWidth < 640 ? 116 : window.innerWidth < 1024 ? 152 : 224)
+      }
+    }
+    
+    updateWidth()
+    
+    // Add event listener for window resize
+    window.addEventListener('resize', updateWidth)
+    
+    // Cleanup
+    return () => window.removeEventListener('resize', updateWidth)
+  }, [])
+
+  const containerStyle = {
+    width: isClient ? `${seamlessCompanies.length * containerWidth}px` : '100%'
+  }
 
   return (
     <section className="py-20 bg-gradient-to-b from-slate-900 to-slate-800 border-t border-white/5">
@@ -206,9 +231,7 @@ export function CompaniesSection() {
                     ease: "linear",
                   },
                 }}
-                style={{
-                  width: `${seamlessCompanies.length * (window?.innerWidth < 640 ? 116 : window?.innerWidth < 1024 ? 152 : 224)}px`
-                }}
+                style={containerStyle}
               >
                 {seamlessCompanies.map((company, index) => (
                   <div
@@ -241,9 +264,7 @@ export function CompaniesSection() {
                     ease: "linear",
                   },
                 }}
-                style={{
-                  width: `${seamlessCompanies.length * (window?.innerWidth < 640 ? 116 : window?.innerWidth < 1024 ? 152 : 224)}px`
-                }}
+                style={containerStyle}
               >
                 {[...seamlessCompanies].reverse().map((company, index) => (
                   <div
