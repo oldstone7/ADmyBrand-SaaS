@@ -62,13 +62,14 @@ A stunning, modern landing page for ADmyBRAND AI Suite, featuring cutting-edge 2
 
 ## 📁 Project Structure
 
-\`\`\`
-admybrand-landing/
-├── app/                          # Next.js App Router
+```
+.
+├── app/                     # Next.js App Router
 │   ├── globals.css              # Global styles and CSS variables
 │   ├── layout.tsx               # Root layout component
 │   └── page.tsx                 # Main landing page
-├── components/                   # Reusable component library
+│
+├── components/              # Reusable component library
 │   ├── navigation/              # Navigation components
 │   │   └── navbar.tsx           # Main navigation bar
 │   ├── sections/                # Landing page sections
