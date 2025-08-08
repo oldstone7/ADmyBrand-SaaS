@@ -2,15 +2,10 @@
 
 A stunning, modern landing page for ADmyBRAND AI Suite, featuring cutting-edge 2025 design trends, advanced animations, and a comprehensive component library built with Next.js 14, TypeScript, and Tailwind CSS.
 
-![ADmyBRAND AI Suite](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)
-![Next.js](https://img.shields.io/badge/Next.js-14.0-black)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.3-38bdf8)
-![Framer Motion](https://img.shields.io/badge/Framer%20Motion-10.16-ff69b4)
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://your-demo-url.com) | [Component Storybook](https://your-storybook-url.com)
+[View Live Demo](https://your-demo-url.com) 
 
 ## ✨ Features
 
