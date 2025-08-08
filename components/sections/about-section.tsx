@@ -44,19 +44,19 @@ const team = [
   {
     name: "Sarah Chen",
     role: "CEO & Co-Founder",
-    image: "/placeholder.svg?height=300&width=300&text=Sarah+Chen",
+    image: "/Sarah-Chen.jpg?height=400&width=400&text=Sarah+Chen",
     bio: "Former VP of Marketing at TechCorp, 15+ years in AI and marketing automation."
   },
   {
     name: "Michael Rodriguez",
     role: "CTO & Co-Founder", 
-    image: "/placeholder.svg?height=300&width=300&text=Michael+Rodriguez",
+    image: "/Michael-Rodriguez.jpg?height=600&width=600&text=Michael+Rodriguez",
     bio: "Ex-Google AI researcher, PhD in Machine Learning from Stanford University."
   },
   {
     name: "Emily Johnson",
     role: "Head of Product",
-    image: "/placeholder.svg?height=300&width=300&text=Emily+Johnson",
+    image: "/Emily-Johnson.jpeg?height=400&width=400&text=Emily+Johnson",
     bio: "Product leader with 10+ years building SaaS platforms for Fortune 500 companies."
   }
 ]

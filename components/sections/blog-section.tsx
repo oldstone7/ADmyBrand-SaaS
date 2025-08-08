@@ -13,10 +13,10 @@ const blogPosts = [
     title: "10 AI Marketing Strategies That Actually Work in 2024",
     excerpt: "Discover the most effective AI-powered marketing strategies that top companies are using to drive growth and engagement.",
     author: "Sarah Chen",
-    date: "Dec 15, 2024",
+    date: "Aug 8, 2025",
     readTime: "8 min read",
     category: "Strategy",
-    image: "/placeholder.svg?height=300&width=500&text=AI+Marketing+Strategies",
+    image: "/Article1.png?height=300&width=500&text=AI+Marketing+Strategies",
     featured: true
   },
   {
@@ -24,20 +24,20 @@ const blogPosts = [
     title: "How to Automate Your Email Campaigns with AI",
     excerpt: "Learn step-by-step how to set up intelligent email automation that adapts to customer behavior and preferences.",
     author: "Mike Johnson",
-    date: "Dec 12, 2024",
+    date: "Aug 8, 2025",
     readTime: "6 min read",
     category: "Tutorial",
-    image: "/placeholder.svg?height=200&width=350&text=Email+Automation"
+    image: "/Article2.avif?height=200&width=350&text=Email+Automation"
   },
   {
     id: 3,
     title: "The Future of Personalized Marketing",
     excerpt: "Explore how AI is revolutionizing personalized marketing and what it means for customer experience.",
     author: "Emily Rodriguez",
-    date: "Dec 10, 2024",
+    date: "Aug 8, 2025",
     readTime: "5 min read",
     category: "Insights",
-    image: "/placeholder.svg?height=200&width=350&text=Personalization"
+    image: "/Article3.jpg?height=200&width=350&text=Personalization"
   }
 ]
 
